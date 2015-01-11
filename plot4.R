@@ -23,7 +23,7 @@ powerConsumption$Sub_metering_3 <- as.numeric(powerConsumption$Sub_metering_3)
 png(filename = "plot4.png")
 par(mfrow = c(2,2))
 with(powerConsumption, {
-  plot(Date, Global_active_power, pch = 27, xlab = "", ylab = "Global Active Power (kilowatts)")
+  plot(Date, Global_active_power, pch = 27, xlab = "", ylab = "Global Active Power")
   lines(Date, Global_active_power)
   
   plot(Date, Voltage, pch = 27, xlab = "datetime", ylab = "Voltage")
