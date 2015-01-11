@@ -29,7 +29,7 @@ with(powerConsumption, {
   plot(Date, Voltage, pch = 27, xlab = "datetime", ylab = "Voltage")
   lines(Date, Voltage)
   
-  plot(Date, Sub_metering_1, pch = 27, xlab = "", ylab = "Energy Sub Metering")
+  plot(Date, Sub_metering_1, pch = 27, xlab = "", ylab = "Energy sub metering")
   points(Date, Sub_metering_2, col = "red", pch = 27)
   points(Date, Sub_metering_3, col = "blue", pch = 27)
   lines(Date, Sub_metering_1)
@@ -37,7 +37,7 @@ with(powerConsumption, {
   lines(Date, Sub_metering_3, col = "blue")
   legend("topright", lwd = 2, bty = "n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
-  plot(Date, Global_reactive_power, pch = 27, xlab = "datetime", ylab = "Voltage")
+  plot(Date, Global_reactive_power, pch = 27, xlab = "datetime", ylab = "Global_reactive_power")
   lines(Date, Global_reactive_power)  
 })
 dev.off()

@@ -17,7 +17,7 @@ powerConsumption$Sub_metering_2 <- as.numeric(powerConsumption$Sub_metering_2)
 powerConsumption$Sub_metering_3 <- as.numeric(powerConsumption$Sub_metering_3)
 
 png(filename = "plot3.png")
-with(powerConsumption, plot(Date, Sub_metering_1, pch = 27, xlab = "", ylab = "Energy Sub Metering"))
+with(powerConsumption, plot(Date, Sub_metering_1, pch = 27, xlab = "", ylab = "Energy sub metering"))
 with(powerConsumption, points(Date, Sub_metering_2, col = "red", pch = 27))
 with(powerConsumption, points(Date, Sub_metering_3, col = "blue", pch = 27))
 with(powerConsumption, lines(Date, Sub_metering_1))
